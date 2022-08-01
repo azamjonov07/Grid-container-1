@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.grid-container{
+    margin: 30px auto;
+    padding: 20px;
+    width: 800px;
+    height: 600px;
+    background:black;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2fr 9fr 2fr;
+    grid-template-areas:
+        "header header"
+        "aside article"
+        "footer footer";
+
+
+    .grid-item1{
+        margin: 0px auto;
+        width: 760px;
+        height: 80px;
+        background: linear-gradient( rgb(0, 255, 247), rgb(13, 0, 255));
+        grid-area: header;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 30px;
+    }
+    .grid-item2{
+        background: linear-gradient( rgb(0, 255, 247), rgb(13, 0, 255));
+        grid-area: aside;
+        margin-top: 20px;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 30px;
+    }
+    .grid-item3{
+        background: linear-gradient(  rgb(0, 255, 247), rgb(13, 0, 255));
+        grid-area: article;
+        margin-top: 20px;
+        text-align: center;
+        padding: 50px 0;
+        color: white;
+        font-size: 30px;
+        .photos{
+            display: flex;
+            margin-top: 100px;
+            justify-content: space-around;
+            width:510px;
+            img{
+                width: 30%;
+            }
+        }
+    }
+    .grid-item4{
+        background: linear-gradient(  rgb(0, 255, 247), rgb(13, 0, 255));
+        grid-area: footer;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 30px;
+    }
+}
+
+h1{
+    color: rgb(0, 51, 255) ;
+    font-style: oblique;
+    font-family: serif;
+    margin-left: 500px;
+}
